@@ -18,12 +18,21 @@ input {
   width: 100%;
 }
 
+.input-bg-white,
 .input-bg-grey {
-  background-color: var(--light-grey);
-  color: var(--dark-grey-secondary);
+  color: var(--toucan-dark);
 }
 
-.input-bg-grey::placeholder {
+.input-bg-grey {
+  background-color: var(--light-grey);
+}
+
+.input-bg-white {
+  background-color: var(--white);
+}
+
+.input-bg-grey::placeholder,
+.input-bg-white::placeholder {
   color: var(--dark-grey-secondary);
 }
 
