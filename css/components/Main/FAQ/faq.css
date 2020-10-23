@@ -4,6 +4,7 @@
   width: 100%;
   row-gap: 46px;
   padding: 43px 30px 49px;
+  max-width: 1196px;
 }
 
 .faq .section-title {
