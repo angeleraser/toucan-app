@@ -82,7 +82,6 @@ html {
   flex-direction: column;
   min-width: 375px;
   min-height: 100vh;
-  max-width: 1440px;
   margin: 0 auto;
   width: 100%;
 }

@@ -68,6 +68,7 @@
   .get-latests-news {
     padding: 54px 212px 72px 120px;
     column-gap: 510px;
+    place-content: center;
   }
 
   .get-latests-news ul {

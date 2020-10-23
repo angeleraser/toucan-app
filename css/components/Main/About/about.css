@@ -9,10 +9,16 @@
   padding: 45px 33px 90px;
 }
 
+.about .section-title {
+  width: 100%;
+  max-width: 1196px;
+}
+
 .about > p {
   margin-top: 10px;
   font-size: var(--fs-s);
   font-weight: var(--fw-normal);
+  max-width: 1198px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -24,5 +30,10 @@
     background-color: var(--toucan-regular);
     color: var(--white);
     padding: 96px 122px 180px;
+  }
+
+  .about .section-title,
+  .about > p {
+    align-self: center;
   }
 }
