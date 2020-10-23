@@ -22,6 +22,7 @@
 }
 
 .presentation .toucan-huddle-speaker img {
+  display: inline-block;
   border-radius: 20px;
 }
 
@@ -65,6 +66,7 @@
   margin-bottom: 46px;
 }
 
+/* Toucan logo anthem */
 .presentation .info-wrapper img {
   justify-self: center;
 }
@@ -88,9 +90,16 @@
 
 /* Available on app store  */
 .presentation .info-wrapper a {
+  display: inline-block;
   justify-self: center;
   margin-bottom: 62px;
-  position: relative;
+  width: 138px;
+  height: 50px;
+}
+
+.presentation .info-wrapper a svg {
+  border: 2px solid var(--black);
+  border-radius: 8px;
 }
 
 .presentation .info-wrapper .short-quote:not(:last-child) {
