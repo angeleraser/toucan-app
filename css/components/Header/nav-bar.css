@@ -23,6 +23,12 @@
 
 .menu .app-logo {
   justify-self: center;
+  background-image: url('../../../assets/svg/app-logo.svg');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 66px;
+  width: 208px;
 }
 
 @media screen and (min-width: 724px) {
