@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Toucan App</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Header  -->
+      <header class="wrapper header">
+        <!-- Menu  -->
+        <nav class="menu">
+          <!-- Menu Button  -->
+          <button
+            id="menu-button"
+            aria-label="Display menu button"
+            class="menu-button"
+          >
+            <span class="line"></span>
+          </button>
+          <!-- App logo -->
+          <a class="app-logo" href="index.html">
+            <img src="./assets/png/app-logo.png" alt="toucan app logo" />
+          </a>
+          <!-- Links -->
+          <ul id="menu-list" class="hidden fw-regular">
+            <li>
+              <a
+                class="button font-roboto button-small button-rounded button-light"
+                href="#about"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="button font-roboto button-small button-rounded button-light"
+                href="#faq"
+                >FAQ</a
+              >
+            </li>
+            <li>
+              <a
+                class="button font-roboto button-small button-rounded button-light"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Main  -->
+      <main class="main wrapper">
+        <!-- Presentation  -->
+        <section class="presentation">
+          <!-- Info  -->
+          <div class="info-wrapper">
+            <img src="./assets/png/logo-anthem.png" alt="logo anthem" />
+            <h2 class="font-sf-pro">Toucan has landed</h2>
+            <p class="font-sf-pro">
+              Toucan is a mobile, audio, peer-to-peer support platform that
+              bridges the gap between traditional social and professional
+              support systems by pairing two users with common situations or
+              interests, one-on-one and anonymously, for conversations we call
+              Huddles.
+            </p>
+            <!-- Phone number  -->
+            <input
+              class="input-small font-sf-pro input-bg-grey input-h-small input-w-small"
+              type="tel"
+              placeholder="Phone number"
+            />
+            <!-- Text link button  -->
+            <button
+              class="button no-hover font-sf-pro button-rounded button-large button-dark"
+            >
+              Text me a link to the app
+            </button>
+            <!-- Divisory line  -->
+            <span class="line"></span>
+            <!-- Available on app store -->
+            <a href="#">
+              <img
+                src="./assets/svg/available-app-store.svg"
+                alt="available on app store"
+              />
+            </a>
+            <!-- Quotes  -->
+            <div class="short-quote font-sf-pro">
+              <q> It’s called Toucan, not Toucan’t. </q>
+              <h3>TechCrunch</h3>
+            </div>
+            <div class="short-quote font-sf-pro">
+              <q> Toucan is the greatest thing ever. </q>
+              <h3>Britney Spears</h3>
+              <span>Trent</span>
+            </div>
+          </div>
+          <!-- Toucan Huddle Speaker  -->
+          <div class="toucan-huddle-speaker font-sf-pro">
+            <!-- Speaker Image  -->
+            <div class="image-wrapper">
+              <img
+                src="./assets/png/toucan-huddle-speaker.png"
+                alt="Toucan huddle speaker"
+              />
+            </div>
+            <h3>Join</h3>
+            <p>
+              Talk to someone who can relate, or lend an ear to a peer in need.
+            </p>
+          </div>
+        </section>
+        <!-- About -->
+        <section id="about" class="about font-sf-pro">
+          <h1 class="section-title">About</h1>
+          <p>
+            Toucan was created to help us feel more connected, understood, and
+            heard. The benefits of speaking to another person are well
+            documented, but existing social and professional support options are
+            leaving many people unfulfilled. In a world where we are all
+            constantly buried in our social media and text messages, we want to
+            revitalize the audio call and give you a meaningful way to open up
+            to someone facing a similar life stage or event. We want to give you
+            a chance to reciprocate and lend an ear to someone in need of an
+            outlet.
+          </p>
+          <!-- Our Team  -->
+          <div class="our-team">
+            <h2>Our team</h2>
+            <!-- Jane  -->
+            <div class="profile-picture">
+              <img
+                src="./assets/png/jane-profile-image.png"
+                alt="Jane profile picture"
+              />
+              <h4>Jane</h4>
+            </div>
+            <!-- Josh -->
+            <div class="profile-picture">
+              <img
+                src="./assets/png/josh-profile-image.png"
+                alt="Josh profile picture"
+              />
+              <h4>Josh</h4>
+            </div>
+            <!-- Trent -->
+            <div class="profile-picture">
+              <img
+                src="./assets/png/trent-profile-image.png"
+                alt="Trent profile picture"
+              />
+              <h4>Trent</h4>
+            </div>
+          </div>
+        </section>
+        <!-- FAQ -->
+        <section id="faq" class="faq font-sf-pro">
+          <h1 class="section-title">FAQ</h1>
+          <!-- It all sounds great, but what does Toucan app actually do? -->
+          <article class="question">
+            <h2>It all sounds great, but what does Toucan app actually do?</h2>
+            <p>
+              Toucan connects you, one-on-one, with another user for a
+              conversation we call huddles. When you schedule your huddle you
+              will choose whether you want to speak or listen, and you will be
+              paired with someone doing the other role. Your huddle will be
+              similar to an audio phone call - no video to maintain anonymity -
+              and the direction of the conversation will be controlled by the
+              Speaker (Listener lines are muted until unmuted by the Speaker).
+              Our users are people just like you. Listeners are not professional
+              peer listeners, and Toucan is not professional therapy. It is a
+              community of users looking to speak and listen to peers, and to
+              provide an extension to traditional social support options.
+            </p>
+          </article>
+          <!-- How does matching work? Do I choose my match? -->
+          <article class="question">
+            <h2>How does matching work? Do I choose my match?</h2>
+            <p>
+              We will match you with another user based on availability, the
+              need for one speaker and one listener in each huddle, and the
+              category or lens the speaker chooses for the huddle (i.e. matching
+              a new parent with another new parent). You will not choose your
+              match as users maintain their anonymity in the app.
+            </p>
+          </article>
+          <!-- Why are users anonymous?  -->
+          <article class="question">
+            <h2>Why are users anonymous?</h2>
+            <p>
+              It can be difficult to fully open up to friends and family - they
+              know you, you may fear judgment from them, and you may not want to
+              burden or concern them. Think about why people tend to speak to
+              the person next to them on an airplane or in a waiting room. At
+              Toucan we want our speakers to feel safe and comfortable confiding
+              in our listeners. Anonymity helps provide this environment.
+            </p>
+          </article>
+          <!-- Why is the Listener’s line muted? -->
+          <article class="question">
+            <h2>Why is the Listener’s line muted?</h2>
+            <p>
+              Friends and family want to help, and in that desire, they can
+              interrupt, turn the conversation to them, or otherwise inhibit you
+              from speaking your mind. Professional therapy, on the other hand,
+              often allows people to speak freely and without fear of
+              interruption. We wanted to harness that in Toucan. However, the
+              goal of the platform is not for the Speaker to just speak at the
+              Listener for the entire Huddle; Speakers are encouraged to unmute
+              the line once they have shared if they want to ask for input, and
+              a 2-way conversation can then ensue.
+            </p>
+          </article>
+          <!-- What can I expect from my Huddle?-->
+          <article class="question">
+            <h2>What can I expect from my Huddle?</h2>
+            <p>
+              Our goal is to make Toucan a safe space for everyone. We want to
+              provide an outlet for speakers and show listeners how others are
+              tackling similar life events.
+            </p>
+            <!-- For Listeners  -->
+            <ul>
+              <h3>For Listeners</h3>
+              <li>You can expect to hear someone opening up.</li>
+              <li>
+                Please be present for the speaker and leave judgement at the
+                door. If the speaker wishes to have an uninterrupted space you
+                may be muted for the huddle - that doesn't mean your presence is
+                any less important.
+              </li>
+            </ul>
+            <!-- For Speakers  -->
+            <ul>
+              <h3>For Speakers</h3>
+              <li>
+                You can expect to have a safe and uninterrupted space to speak
+                your mind.
+              </li>
+              <li>
+                Remember you are speaking to another person, and to be
+                respectful in the material you discuss and the language you use.
+              </li>
+              <li>
+                Keep in mind that Listeners are not trained professionals and
+                are not expected to give you counsel or advice, they are there
+                to lend an ear.
+              </li>
+            </ul>
+          </article>
+          <!-- What if I need to reschedule my Huddle? -->
+          <article class="question">
+            <h2>What if I need to reschedule my Huddle?</h2>
+            <p>
+              Huddles are live audio calls that by nature need both people to be
+              present, but things do come up. Here are some tips and guidelines:
+              If you need to reschedule, try to give as much notice as possible,
+              then use the options in the Scheduled Huddles section of the app
+              to cancel and reschedule If you are a Speaker and cancel at least
+              24 hours ahead of your scheduled Huddle, you will not be charged
+              for your Huddle; if you cancel within 24 hours (or simply don't
+              show up) you will be charged. If you are a Speaker and your
+              Listener cancels or does not show up within 5 minutes of your
+              scheduled Huddle start time, you will not be charged.
+            </p>
+          </article>
+          <!-- How much does a Huddle cost? How do I purchase credits? -->
+          <article class="question">
+            <h2>How much does a Huddle cost? How do I purchase credits?</h2>
+            <p>
+              Each time you want to speak in a Huddle, you will be charged 1
+              credit (credits never expire!) Listening is always free. There are
+              a few ways to get credits:
+            </p>
+            <ol class="col-span">
+              <li>
+                You can purchase them in the Toucan app, and will find options:
+                <strong>
+                  ​1 credit for $12; 3 credits for $30; 5 credits for $45;
+                </strong>
+                or <strong> 12 credits for $100. </strong>
+              </li>
+              <li>
+                You can receive a code from your employer, an organization you
+                are affiliated with, or from a friend who has purchased credits
+                on your behalf.
+              </li>
+              <li>
+                You can earn 1 credit for each Huddle where you act as a
+                listener for someone else.
+              </li>
+            </ol>
+          </article>
+          <!-- What if I am uncomfortable with or concerned about my huddle partner or things discussed? -->
+          <article class="question">
+            <h2>
+              What if I am uncomfortable with or concerned about my huddle
+              partner or things discussed?
+            </h2>
+            <p>
+              We want you to be open, comfortable, and supported in your
+              huddles. Listeners have no responsibility or expectation to give
+              counsel or advice, and will not be asked or expected to remain on
+              a huddle if they are uncomfortable with the material.
+            </p>
+            <!-- For Listeners  -->
+            <ul>
+              <h3>For Listeners</h3>
+              <li>
+                Please respect that the speaker is being vulnerable and open. If
+                you are not comfortable with the material, you can end the
+                huddle early.
+              </li>
+              <li>
+                If you want to provide further feedback you can do so on your
+                post-huddle form or by contacting Toucan directly.
+              </li>
+            </ul>
+            <!-- For Speakers  -->
+            <ul>
+              <h3>For Speakers</h3>
+              <li>
+                Please remember there is someone else on the call and be mindful
+                of the topics you discuss and language you use.
+              </li>
+              <li>
+                If a listener ends your huddle early, please fill out your
+                post-huddle form and we will respond as we deem appropriate,
+                including, when reasonable, issuing a credit to your account. If
+                you are considering suicide or taking any action that might
+                cause harm to you or to others, please call the suicide hotline
+                number 1.800.273.8255 and/or utilize immediate
+                <a href="#">help resources here.</a>
+              </li>
+            </ul>
+          </article>
+          <!-- What if I have an issue with my huddle that is not covered here? -->
+          <div class="question border-none">
+            <h2>
+              What if I have an issue with my huddle that is not covered here?
+            </h2>
+            <p>
+              Fill out this form and someone from the Toucan team will be in
+              touch!
+            </p>
+            <form class="col-span">
+              <textarea
+                placeholder="Please state the problem you are having..."
+                class="input-bg-grey input-w-full font-sf-pro"
+              ></textarea>
+              <button
+                class="button font-sf-pro button-dark button-small button-rounded no-hover"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <!-- Helpful links -->
+          <div class="helpful-links">
+            <h2>Helpful links</h2>
+            <ul>
+              <li><a href="#"> Community Standards ›</a></li>
+              <li><a href="terms-of-use.html">Terms of Use ›</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy ›</a></li>
+              <li><a href="#">Contact Toucan ›</a></li>
+            </ul>
+          </div>
+        </section>
+        <!-- Get in Touch  -->
+        <section id="contact" class="get-in-touch font-sf-pro">
+          <h1 class="section-title">Get in touch</h1>
+          <form>
+            <!-- Name -->
+            <input
+              class="input-w-full font-sf-pro input-h-small input-bg-dark"
+              type="text"
+              placeholder="Name"
+              name="name"
+            />
+            <!-- Email  -->
+            <input
+              class="input-w-full font-sf-pro email input-h-small input-bg-dark"
+              type="email"
+              placeholder="Email"
+              name="email"
+            />
+            <!-- Subject -->
+            <input
+              class="input-w-full font-sf-pro input-h-small input-bg-dark"
+              type="text"
+              placeholder="Subject"
+              name="subject"
+            />
+            <textarea
+              placeholder="Type your message here"
+              class="input-bg-dark font-sf-pro input-w-full"
+            ></textarea>
+            <button
+              class="button font-sf-pro button-white button-small button-rounded no-hover"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+          <!-- Toucan SVG  -->
+          <div class="svg-pattern">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 450 578"
+              width="100%"
+            >
+              <defs />
+              <g stroke="#fff" stroke-miterlimit="10" clip-path="url(#clip0)">
+                <path
+                  stroke-width="2"
+                  d="M204.806 573.085s55.652-1.864 139.359-2.571c77.254-.646 78.734-88.859 78.734-88.859s-63.781 23.434-79.514 88.971c0 0 5.672-101.092 71.706-148.881 0 0-.845 48.038-6.545 66.838M260.688 267.436s-22.609 16.554-21.204 51.244c1.405 34.689 20.925 46.413 20.925 46.413l-6.042 17.171M279.843 407.458c13.505.228 19.171-5.948 15.328-16.109"
+                />
+                <path
+                  stroke-width="2"
+                  d="M277.05 506.541s6.235 61.903-59.492 66.22c0 0-67.27 1.801-126.384 2.516-59.113.715-80.423-71.791-82.692-96.483 0 0 15.63 11.617 34.146 30.057 17.226 17.178 35.907 40.906 47.811 66.06 0 0-44.09-93.939-2.96-189.845 0 0 42.863 68.316 3.989 189.204"
+                />
+                <path
+                  stroke-width="2"
+                  d="M70.19 473.47s-14.548-45.622-39.927-71.311c0 0-8.902 57.407 12.348 106.692M91.162 575.651l.323-1.382c11.292-25.434 30.109-49.395 46.915-66.969 18.047-18.881 33.408-30.874 33.408-30.874-1.654 24.723-21.52 98.119-80.634 98.834"
+                />
+                <path
+                  stroke-width="2"
+                  d="M107.753 472.982s13.965-45.951 38.699-72.229c0 0 10.07 58.794-9.981 108.578M296.255 524.444s-8.423 12.658-25.898 17.089"
+                />
+                <path
+                  fill="#F7A08E"
+                  stroke-width="2"
+                  d="M268.421 489.582c.057 4.711 4.129 17.014 8.629 16.959 4.501-.054 7.68-12.444 7.622-17.156-.057-4.712-3.737-8.478-8.22-8.424-4.483.054-8.088 3.909-8.031 8.621zM295.875 505.599c-1.97 4.277-3.564 17.141.502 19.031 4.082 1.89 12.268-7.923 14.255-12.201 1.969-4.277.261-9.275-3.804-11.148-4.082-1.907-8.984.041-10.953 4.318zM242.231 517.613c2.409 4.037 12.126 12.613 15.971 10.303 3.844-2.309.383-14.618-2.027-18.672-2.409-4.037-7.487-5.439-11.349-3.129-3.844 2.309-5.005 7.444-2.595 11.498z"
+                />
+                <path
+                  stroke-width="2"
+                  d="M257.975 527.46s6.367 12.393 5.43 24.807M273.604 258.262c3.93-.047 7.077-3.277 7.029-7.213-.047-3.936-3.272-7.089-7.201-7.041-3.93.047-7.077 3.277-7.029 7.213.047 3.936 3.272 7.089 7.201 7.041z"
+                />
+                <path
+                  stroke-width="2"
+                  d="M260.94 234.921l.423 34.905c.125 10.394 3.422 24.576 17.33 24.408 13.891-.168 26.459-14.237 19.079-33.27-7.381-19.05-22.924-24.833-36.832-26.043z"
+                />
+                <path
+                  stroke-width="2"
+                  d="M260.706 264.679l-64.208.777-.091-7.501c-.198-16.381 12.263-22.402 36.232-23.474 23.969-1.073 34.954 1.38 34.954 1.38M289.446 365.967l-1.251-3.711s33.774-44.149 9.576-101.309"
+                />
+                <path
+                  stroke-width="2"
+                  d="M283.962 339.425c5.075-.266 7.106 4.813 5.861 8.554-.983 2.955-2.379 8.331-5.194 8.689-2.798.357-4.877-4.45-6.303-8.55-1.425-4.1.612-8.428 5.636-8.693zM264.805 339.537c-5.08-.142-6.988 4.985-5.653 8.694 1.055 2.931 2.58 8.271 5.403 8.56 2.823.29 4.768-4.566 6.094-8.699 1.326-4.133-.815-8.428-5.844-8.555z"
+                />
+                <path
+                  stroke-width="2"
+                  d="M289.823 347.996l44.678-.659c63.119-.934 62.67-63.315 62.67-63.315s-46.05 5.168-62.67 63.315M258.916 348.37s-25.461-2.958-26.085 91.471c-.623 94.429-39.773 135.07-134.037 134.952"
+                />
+                <path
+                  stroke-width="2"
+                  d="M233.022 428.9c12.417-92.514 111.467-58.938 111.467-58.938s-40.93 30.999-96.543 20.631c-.234.326 51.601 12.85 65.291 69.082 0 0-61.399-8.529-65.291-69.082M321.324 347.615l-1.146-94.731c-.854-70.593-47.435-82.67-95.307-82.09-47.872.579-50.341 37.969-50.341 37.969s51.106-.023 52.413-37.978"
+                />
+                <path
+                  stroke-width="1.9"
+                  d="M252.996 172.154s-6.587-41.925-55.913-42.213c0 0 3.077 38.14 43.638 41.188"
+                />
+                <path
+                  stroke-width="2"
+                  d="M232.639 234.481l.37 30.533M384.66 204.57s-61.944-4.44-64.356 61.498M366.248 186.249s-12.377 8.809-16.291 26.431"
+                />
+                <path
+                  fill="#F7A08E"
+                  stroke-width="2"
+                  d="M401.849 213.106c-4.703.074-17.096-3.655-17.167-8.145-.072-4.491 12.199-8.059 16.903-8.133 4.703-.074 8.568 3.503 8.656 7.994.055 4.49-3.688 8.193-8.392 8.284zM385.048 186.072c-4.204 2.092-17.003 4.068-19.005.043-2.002-4.025 7.542-12.528 11.763-14.62 4.22-2.093 9.25-.538 11.235 3.487 1.984 4.025.227 8.997-3.993 11.09zM374.628 240.146c-4.104-2.298-12.931-11.77-10.754-15.692 2.195-3.922 14.58-.806 18.684 1.492 4.104 2.298 5.66 7.349 3.465 11.272-2.178 3.905-7.291 5.226-11.395 2.928z"
+                />
+                <path
+                  stroke-width="2"
+                  d="M364.352 224.67s-12.556-6.007-24.905-4.718M245.397 62.088c-17.98-7.881-65.495-14.366-65.495-14.366 39.638 71.297 139.191 88.824 139.191 88.824-63.125-23.36-78.855-89.554-78.855-89.554s77.399 11.38 78.845 88.754c.102 5.596.2 10.886.294 15.904l.535 44.176M347.918 101.695s-16.078-28.966 1.248-44.266c4.1-3.622 7.853 14.604 7.853 14.604s12.639-9.612 17.073-6.722c4.434 2.89-3.964 19.068-3.964 19.068s14.129-2.978 17.048 1.087c2.92 4.065-17.354 25.576-39.258 16.229z"
+                />
+                <path
+                  stroke-width="2"
+                  d="M374.092 65.311s18.456-18.716 38.456-23.603c19.999-4.886 29.418-26.556 2.579-14.237"
+                />
+                <path
+                  stroke-width="2"
+                  d="M410.805 42.307c.323-1.398 11.775-33.334 3.124-33.842-8.652-.508-48.754 21.737-56.91 63.551M431.492 25.47s5.008 27.823-18.231 40.099c-23.239 12.275-40.387 12.789-40.387 12.789"
+                />
+                <path
+                  stroke-width="2"
+                  d="M427.093 52.131s11.893.282 13.539 2.984c1.646 2.702 1.794 3.67-1.982 6.063-3.775 2.394-3.601 6.968-10.551 12.326-6.949 5.358-27.289 17.207-40.923 11.945M397.603 15.145s-1.895-12.04-6.992-12.148c-5.113-.091-7.433 3.322-8.928 6.08-1.512 2.757-2.374 3.107-8.336 8.692-5.962 5.584-18.737 22.207-19.794 42.874M349.583 101.743s-30.221 37.386-29.56 96.208l.706 59.792"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <path
+                    fill="#fff"
+                    d="M0 0h442v572H0z"
+                    transform="rotate(-.693 497.303 -60.929)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </section>
+      </main>
+      <!-- Footer  -->
+      <footer class="footer wrapper">
+        <!-- Get latests news form & social networks -->
+        <section class="get-latests-news font-sf-pro">
+          <h3>Get the latests news from Toucan</h3>
+          <form>
+            <input
+              class="input-h-small font-sf-pro input-w-full"
+              type="email"
+              name="email"
+              placeholder="Email address"
+            />
+            <button
+              class="button font-sf-pro button-dark button-medium button-rounded no-hover"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+          <!-- Social Links  -->
+          <ul>
+            <!-- Facebook -->
+            <li>
+              <a aria-label="Facebook link" href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 28 28"
+                >
+                  <defs />
+                  <path
+                    fill="#fff"
+                    fill-rule="evenodd"
+                    d="M25.862.72H2.138C1.325.72.667 1.38.667 2.193v23.72c0 .813.658 1.471 1.471 1.471H14.91V17.058h-3.475v-4.024h3.475v-2.967c0-3.444 2.104-5.32 5.176-5.32 1.472 0 2.737.11 3.106.16v3.598l-2.131.001c-1.671 0-1.995.794-1.995 1.96v2.568h3.986l-.52 4.024h-3.466v10.325h6.796c.812 0 1.471-.659 1.471-1.471V2.192c0-.813-.659-1.471-1.471-1.471z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+            <!-- Twitter -->
+            <li>
+              <a aria-label="Twitter link" href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 32 27"
+                >
+                  <defs />
+                  <path
+                    fill="#fff"
+                    d="M31.938 3.785c-1.176.52-2.439.871-3.764 1.028a6.559 6.559 0 002.882-3.614 13.164 13.164 0 01-4.161 1.585A6.552 6.552 0 0022.11.721c-3.619 0-6.552 2.926-6.552 6.532 0 .511.059 1.01.17 1.489A18.624 18.624 0 012.223 1.916a6.487 6.487 0 00-.887 3.285 6.522 6.522 0 002.915 5.437 6.542 6.542 0 01-2.968-.817v.082c0 3.166 2.26 5.804 5.256 6.405a6.578 6.578 0 01-2.96.11 6.555 6.555 0 006.122 4.537 13.174 13.174 0 01-8.139 2.797c-.529 0-1.05-.031-1.562-.091a18.584 18.584 0 0010.046 2.935c12.053 0 18.643-9.955 18.643-18.588 0-.284-.007-.564-.018-.844a13.27 13.27 0 003.267-3.379z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <!-- Instagram  -->
+            <li>
+              <a aria-label="Instagram link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                  <defs />
+                  <path
+                    fill="#fff"
+                    d="M16 2.881c4.275 0 4.781.019 6.462.094 1.563.069 2.406.331 2.969.55a4.952 4.952 0 011.837 1.194 5.015 5.015 0 011.2 1.838c.219.563.481 1.412.55 2.969.075 1.688.094 2.194.094 6.463s-.019 4.781-.094 6.463c-.069 1.563-.331 2.406-.55 2.969a4.94 4.94 0 01-1.194 1.837 5.02 5.02 0 01-1.837 1.2c-.563.219-1.413.481-2.969.55-1.688.075-2.194.094-6.463.094s-4.781-.019-6.463-.094c-1.563-.069-2.406-.331-2.969-.55a4.952 4.952 0 01-1.838-1.194 5.02 5.02 0 01-1.2-1.837c-.219-.563-.481-1.413-.55-2.969-.075-1.688-.094-2.194-.094-6.463s.019-4.781.094-6.463c.069-1.563.331-2.406.55-2.969a4.964 4.964 0 011.194-1.838 5.015 5.015 0 011.838-1.2c.563-.219 1.412-.481 2.969-.55 1.681-.075 2.188-.094 6.463-.094zM16 0c-4.344 0-4.887.019-6.594.094-1.7.075-2.869.35-3.881.744-1.056.412-1.95.956-2.837 1.85a7.833 7.833 0 00-1.85 2.831C.444 6.538.169 7.7.094 9.4.019 11.113 0 11.656 0 16s.019 4.887.094 6.594c.075 1.7.35 2.869.744 3.881.413 1.056.956 1.95 1.85 2.837a7.82 7.82 0 002.831 1.844c1.019.394 2.181.669 3.881.744 1.706.075 2.25.094 6.594.094s4.888-.019 6.594-.094c1.7-.075 2.869-.35 3.881-.744 1.05-.406 1.944-.956 2.831-1.844s1.438-1.781 1.844-2.831c.394-1.019.669-2.181.744-3.881.075-1.706.094-2.25.094-6.594s-.019-4.887-.094-6.594c-.075-1.7-.35-2.869-.744-3.881a7.506 7.506 0 00-1.831-2.844A7.82 7.82 0 0026.482.843C25.463.449 24.301.174 22.601.099c-1.712-.081-2.256-.1-6.6-.1z"
+                  />
+                  <path
+                    fill="#fff"
+                    d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219A8.221 8.221 0 0016 7.781zm0 13.55a5.331 5.331 0 110-10.663 5.331 5.331 0 010 10.663zM26.462 7.456a1.919 1.919 0 11-3.838 0 1.919 1.919 0 013.838 0z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- Copyright  -->
+        <section class="copyright font-sf-pro">
+          &copy; Copyright 2020 Toucan App, Inc. <br />
+          <a href="terms-of-use.html"> Terms & Conditions</a> and
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </section>
+      </footer>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

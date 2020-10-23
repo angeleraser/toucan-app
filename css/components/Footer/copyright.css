@@ -1,0 +1,21 @@
+.copyright {
+  background-color: var(--white);
+  text-align: center;
+  width: 100%;
+  padding: 36px 0;
+  font-size: var(--fs-ss);
+  color: var(--dark-grey-primary);
+}
+
+.copyright a {
+  display: inline-block;
+  color: var(--toucan-light);
+  text-decoration: none;
+  margin-top: 4px;
+}
+
+@media screen and (min-width: 1024px) {
+  .copyright {
+    padding: 74px;
+  }
+}

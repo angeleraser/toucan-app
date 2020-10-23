@@ -1,0 +1,48 @@
+.menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: 45px;
+}
+
+.menu ul {
+  display: grid;
+  place-items: center;
+  row-gap: 18px;
+  width: 100%;
+  grid-column: span 2;
+}
+
+.menu ul.hidden {
+  display: none;
+}
+
+.menu ul a {
+  text-decoration: none;
+}
+
+.menu .app-logo {
+  justify-self: center;
+}
+
+@media screen and (min-width: 724px) {
+  .menu {
+    grid-template-columns: 1fr auto;
+    row-gap: 0px;
+  }
+
+  .menu ul {
+    grid-column: initial;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 17px;
+    row-gap: 0px;
+  }
+
+  .menu ul.hidden {
+    display: grid;
+  }
+
+  .menu .app-logo {
+    justify-self: flex-start;
+  }
+}

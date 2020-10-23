@@ -1,0 +1,25 @@
+.section-info {
+  display: grid;
+  row-gap: 30px;
+  padding: 140px 33px 90px;
+}
+
+.section-info h1 {
+  font-size: var(--fs-xl);
+  display: flex;
+  align-items: flex-start;
+  color: var(--toucan-dark);
+  flex-direction: column;
+  font-weight: var(--fw-ultra-bold);
+}
+
+.section-info p {
+  font-size: var(--fs-s);
+  color: var(--dark-grey-primary);
+}
+
+@media screen and (min-width: 1440px) {
+  .section-info {
+    padding: 140px 130px 90px;
+  }
+}

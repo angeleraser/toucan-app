@@ -1,0 +1,28 @@
+@import "./our-team.css";
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  background-color: var(--toucan-regular);
+  color: var(--white);
+  padding: 45px 33px 90px;
+}
+
+.about > p {
+  margin-top: 10px;
+  font-size: var(--fs-s);
+  font-weight: var(--fw-normal);
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: var(--toucan-regular);
+    color: var(--white);
+    padding: 96px 122px 180px;
+  }
+}

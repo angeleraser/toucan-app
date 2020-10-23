@@ -1,0 +1,44 @@
+:root {
+  /* Colors */
+  --toucan-dark: #140035;
+  --toucan-regular: #2e0057;
+  --toucan-light: #61308d;
+  --toucan-ultralight: #eeefff;
+  --ultra-light-grey: #f8f8f8;
+  --tiny-grey: #e8e8e8;
+  --light-grey: #f6f6f6;
+  --primary-grey: #9a9a9a;
+  --secondary-grey: #a3a3a3;
+  --tertiary-grey: #a3a3a3;
+  --dark-grey-primary: #595959;
+  --dark-grey-secondary: #9f9f9f;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Border radius */
+  --input-radius: 12px;
+  --rounded: 27px;
+  --rounded-full: 50%;
+
+  /* Font weight */
+  --fw-ultra-bold: 900;
+  --fw-bold: 700;
+  --fw-semibold: 600;
+  --fw-regular: 500;
+  --fw-normal: 400;
+
+  /* Font size */
+  --fs-xl: 36px;
+  --fs-l: 24px;
+  --fs-m: 18px;
+  --fs-s: 16px;
+  --fs-ss: 14px;
+  --fs-vs: 13px;
+
+  /* Font family */
+  --font-roboto: "Roboto", sans-serif;
+  --font-sf-pro: "SF Pro Text", -apple-system, BlinkMacSystemFont, Roboto,
+    "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+

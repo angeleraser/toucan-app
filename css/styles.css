@@ -1,0 +1,26 @@
+/* Base Styles & Variables*/
+@import "./base/reset.min.css";
+@import "./base/settings.css";
+
+/* -- Fonts -- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* -- Utils --  */
+@import "./utils/utils.css";
+
+/* Components  */
+
+/* -- Buttons -- */
+@import "./components/Buttons/buttons.css";
+
+/* -- Inputs -- */
+@import "./components/Inputs/inputs.css";
+
+/* -- Header -- */
+@import "./components/Header/header.css";
+
+/* -- Main -- */
+@import "./components/Main/main.css";
+
+/* -- Footer -- */
+@import "./components/Footer/footer.css";

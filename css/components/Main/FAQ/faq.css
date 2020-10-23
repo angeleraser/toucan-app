@@ -1,0 +1,138 @@
+.faq {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  row-gap: 46px;
+  padding: 43px 30px 49px;
+}
+
+.faq .section-title {
+  color: var(--toucan-dark);
+}
+
+.faq a {
+  font-weight: var(--fw-bold);
+  color: var(--toucan-light);
+  text-decoration: none;
+}
+
+.faq .question {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  width: 100%;
+  border-bottom: 1px solid var(--tiny-grey);
+  padding-bottom: 36px;
+}
+/*
+ Only visible on desktop 
+ Display to none .question from :nth-child(9) to :nth-child(4)
+ */
+.faq .question:nth-child(-n + 9):not(:nth-child(2)):not(:nth-child(3)) {
+  display: none;
+}
+
+.faq .question.border-none {
+  border: none;
+}
+
+.faq h2 {
+  font-size: var(--fs-m);
+  color: var(--toucan-dark);
+  font-weight: var(--fw-ultra-bold);
+  margin-bottom: 24px;
+}
+
+.faq .question p,
+.faq .question li {
+  font-size: var(--fs-s);
+  color: var(--dark-grey-primary);
+  font-weight: var(--fw-normal);
+}
+
+.faq .question ul,
+.faq .question ol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.faq .question ol {
+  padding-left: 15px;
+}
+
+.faq .question ul > li:not(:last-child),
+.faq .question ol > li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.faq .question strong {
+  color: var(--toucan-dark);
+}
+
+.faq .question ul h3 {
+  font-size: var(--fs-ss);
+  color: var(--toucan-dark);
+  font-weight: var(--fw-ultra-bold);
+  margin-bottom: 18px;
+}
+
+/* Form  */
+.faq form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.faq form button {
+  margin-top: 30px;
+}
+
+.faq textarea {
+  border-radius: var(--input-radius);
+  resize: none;
+  min-height: 218px;
+  border: none;
+  padding: 25px;
+}
+
+.faq textarea:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .faq .question {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+    column-gap: 75px;
+  }
+
+  .faq .question p,
+  .faq .question h2 {
+    grid-column: span 2;
+  }
+
+  .faq .question ul,
+  .faq .question ol {
+    margin-top: 38px;
+  }
+
+  .faq .col-span {
+    grid-column: span 2;
+  }
+
+  .faq form {
+    margin: 30px 0 0;
+  }
+
+  .question:nth-child(-n
+      + 9):not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {
+    display: grid;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .faq {
+    padding: 100px 122px 56px;
+  }
+}

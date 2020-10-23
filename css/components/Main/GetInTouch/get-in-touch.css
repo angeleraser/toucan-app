@@ -1,0 +1,86 @@
+.get-in-touch {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--toucan-regular);
+  color: var(--white);
+  padding: 45px 30px 50px;
+  width: 100%;
+}
+
+.get-in-touch form {
+  display: grid;
+  grid-template-columns: minmax(300px, 420px);
+  place-content: center;
+  row-gap: 31px;
+}
+
+.get-in-touch textarea {
+  border: none;
+  border-radius: var(--input-radius);
+  height: 316px;
+  padding: 22px;
+  resize: none;
+}
+
+.get-in-touch textarea:focus {
+  outline: none;
+}
+
+.get-in-touch .svg-pattern {
+  width: 100%;
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .get-in-touch {
+    grid-template-columns: 1fr minmax(380px, 442px);
+    column-gap: 112px;
+  }
+
+  .get-in-touch .section-title {
+    grid-column: span 2;
+  }
+
+  .get-in-touch form {
+    grid-template-columns: 346px 1fr;
+    grid-template-areas:
+      "InputName ."
+      "InputEmail ."
+      "InputSubject ."
+      "Textarea Textarea"
+      ". SubmitButton";
+  }
+
+  .get-in-touch form input[name="name"] {
+    grid-area: InputName;
+  }
+
+  .get-in-touch form input[name="email"] {
+    grid-area: InputEmail;
+  }
+
+  .get-in-touch form input[name="subject"] {
+    grid-area: InputSubject;
+  }
+
+  .get-in-touch form textarea {
+    grid-area: Textarea;
+  }
+
+  .get-in-touch form button[type="submit"] {
+    grid-area: SubmitButton;
+    justify-self: flex-end;
+  }
+
+  .get-in-touch .svg-pattern {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .get-in-touch {
+    padding: 96px 60px 55px 122px;
+    grid-template-columns: 712px minmax(380px, 442px);
+  }
+}

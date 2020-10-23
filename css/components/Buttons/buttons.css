@@ -1,0 +1,70 @@
+@import "./menu-button.css";
+/* Reset button styles  */
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.button {
+  padding: 26px;
+  display: flex;
+  max-height: 54px;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fs-ss);
+}
+
+.button-small {
+  width: 130px;
+}
+
+.button-medium {
+  width: 164px;
+}
+
+.button-large {
+  width: 222px;
+}
+
+.button-rounded {
+  border-radius: var(--rounded);
+}
+
+/* Button dark  */
+.button-dark {
+  background-color: var(--toucan-regular);
+  color: var(--white);
+}
+
+.button-dark:hover {
+  background-color: var(--white);
+  color: var(--toucan-dark);
+}
+
+/* Button White  */
+.button-white {
+  background-color: var(--white);
+  color: var(--toucan-dark);
+}
+
+/* Button Light  */
+.button-light {
+  background-color: var(--toucan-ultralight);
+  color: var(--toucan-dark);
+}
+
+.button-light:hover {
+  background-color: var(--toucan-regular);
+  color: var(--white);
+}
+
+.button-dark.no-hover:hover {
+  background-color: var(--toucan-regular);
+  color: var(--white);
+}

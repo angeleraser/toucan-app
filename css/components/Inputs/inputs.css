@@ -1,0 +1,37 @@
+input {
+  border: none;
+  outline: none;
+  text-indent: 22px;
+  border-radius: var(--input-radius);
+  font-size: var(--fs-ss);
+}
+
+.input-h-small {
+  height: 52px;
+}
+
+.input-w-small {
+  width: 222px;
+}
+
+.input-w-full {
+  width: 100%;
+}
+
+.input-bg-grey {
+  background-color: var(--light-grey);
+  color: var(--dark-grey-secondary);
+}
+
+.input-bg-grey::placeholder {
+  color: var(--dark-grey-secondary);
+}
+
+.input-bg-dark {
+  background-color: var(--toucan-dark);
+  color: var(--white);
+}
+
+.input-bg-dark::placeholder {
+  color: var(--white);
+}

@@ -1,0 +1,10 @@
+@import "./nav-bar.css";
+.header {
+  padding: 50px 33px 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 33px 165px 0 120px;
+  }
+}

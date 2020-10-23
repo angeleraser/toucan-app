@@ -1,0 +1,218 @@
+@import "./quotes.css";
+.presentation {
+  display: grid;
+  place-content: center;
+  grid-template-columns: minmax(auto, 320px);
+  padding: 50px 27px 47px;
+  width: 100%;
+}
+
+/* Toucan Huddle Speaker Image wrapper  */
+.presentation .toucan-huddle-speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 46px;
+}
+
+.presentation .toucan-huddle-speaker .image-wrapper {
+  border-radius: 20px;
+  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.2);
+}
+
+.presentation .toucan-huddle-speaker img {
+  border-radius: 20px;
+}
+
+.presentation .toucan-huddle-speaker h3 {
+  font-size: var(--fs-m);
+  font-weight: var(--fw-ultra-bold);
+  color: var(--black);
+  width: 100%;
+  text-align: left;
+  margin-top: 38px;
+  margin-bottom: 8px;
+}
+
+/* Info  */
+.presentation .info-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.presentation .info-wrapper h2 {
+  font-size: var(--fs-l);
+  font-weight: var(--fw-ultra-bold);
+  color: var(--toucan-dark);
+  margin-top: 22px;
+  margin-bottom: 12px;
+  width: 100%;
+  text-align: left;
+}
+
+.presentation .info-wrapper p,
+.presentation .toucan-huddle-speaker p {
+  font-weight: var(--fw-normal);
+  font-size: var(--fs-s);
+  color: var(--dark-grey-primary);
+  width: 100%;
+  text-align: left;
+}
+
+.presentation .info-wrapper p {
+  margin-bottom: 46px;
+}
+
+.presentation .info-wrapper img {
+  justify-self: center;
+}
+
+.presentation .info-wrapper input,
+.presentation .info-wrapper button {
+  justify-self: center;
+}
+
+.presentation .info-wrapper .button-large {
+  margin-top: 28px;
+  position: relative;
+}
+
+.presentation .info-wrapper .line {
+  border-top: 1px solid var(--tiny-grey);
+  display: inline-block;
+  width: 100%;
+  margin: 48px 0;
+}
+
+/* Available on app store  */
+.presentation .info-wrapper a {
+  justify-self: center;
+  margin-bottom: 62px;
+  position: relative;
+}
+
+.presentation .info-wrapper .short-quote:not(:last-child) {
+  margin-bottom: 72px;
+}
+
+.presentation .info-wrapper .short-quote {
+  margin-right: 26px;
+}
+
+@media screen and (min-width: 1200px) {
+  .presentation {
+    grid-template-columns: 524px 456px;
+    column-gap: 150px;
+    padding: 75px 60px 80px;
+  }
+
+  /* Toucan Speaker wrapper  */
+  .presentation .toucan-huddle-speaker {
+    margin-top: 0;
+    order: -1;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .presentation .toucan-huddle-speaker h3,
+  .presentation .toucan-huddle-speaker p {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 280px;
+  }
+
+  .presentation .toucan-huddle-speaker p {
+    font-size: var(--fs-ss);
+    margin: 0;
+  }
+
+  .presentation .toucan-huddle-speaker h3 {
+    margin-top: 70px;
+    margin-bottom: 10px;
+  }
+
+  .presentation .toucan-huddle-speaker .image-wrapper {
+    width: 100%;
+    height: 624px;
+    position: relative;
+  }
+
+  .presentation .toucan-huddle-speaker img {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Info  */
+  .presentation .info-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 132px minmax(auto, 100px) 68px 20px 100px repeat(
+        2,
+        80px
+      );
+    grid-template-areas:
+      "ToucanLogo Heading"
+      "Description Description"
+      "InputNumber SendMessageButton"
+      "DivisoryLine DivisoryLine"
+      "AvailableAppStore .";
+    row-gap: 30px;
+    column-gap: 22px;
+  }
+
+  .presentation .info-wrapper img {
+    justify-self: flex-start;
+    grid-area: ToucanLogo;
+  }
+
+  .presentation .info-wrapper h2 {
+    font-size: var(--fs-xl);
+    line-height: 36px;
+    margin: 0 0 0 -100px;
+    grid-area: Heading;
+  }
+
+  .presentation .info-wrapper p {
+    margin-bottom: 0;
+    height: 72px;
+    grid-area: Description;
+  }
+
+  .presentation .info-wrapper .line {
+    grid-area: DivisoryLine;
+    margin: 0;
+  }
+
+  .presentation .info-wrapper .short-quote:not(:last-child) {
+    margin-bottom: 72px;
+  }
+
+  .presentation .info-wrapper .button-large {
+    margin: 0;
+    grid-area: SendMessageButton;
+  }
+  .presentation .info-wrapper input {
+    grid-area: InputNumber;
+  }
+  .presentation .info-wrapper a {
+    justify-self: flex-start;
+    margin-bottom: 0;
+    grid-area: AvailableAppStore;
+  }
+
+  .presentation .info-wrapper .short-quote {
+    grid-column: span 2;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .presentation {
+    padding: 145px 122px 170px;
+  }
+}
