@@ -6,6 +6,10 @@
   max-width: 1440px;
 }
 
+.wrapper-w-full {
+  max-width: 100%;
+}
+
 .font-roboto {
   font-family: var(--font-roboto);
 }

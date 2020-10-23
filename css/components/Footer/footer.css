@@ -1,8 +1,2 @@
 @import "./get-latest-news.css";
 @import "./copyright.css";
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-}
