@@ -11,10 +11,13 @@
   row-gap: 18px;
   width: 100%;
   grid-column: span 2;
+  height: 200px;
+  overflow: hidden;
+  transition: height .3s linear;
 }
 
 .menu ul.hidden {
-  display: none;
+  height: 0px;
 }
 
 .menu ul a {
@@ -23,7 +26,7 @@
 
 .menu .app-logo {
   justify-self: center;
-  background-image: url('../../../assets/svg/app-logo.svg');
+  background-image: url("../../../assets/svg/app-logo.svg");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
