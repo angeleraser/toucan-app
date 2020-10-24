@@ -136,5 +136,6 @@
 @media screen and (min-width: 1440px) {
   .faq {
     padding: 100px 122px 56px;
+    place-content: center;
   }
 }
