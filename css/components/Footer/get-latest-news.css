@@ -49,7 +49,7 @@
   .get-latests-news {
     grid-template-columns: 346px auto;
     grid-template-rows: repeat(3, auto);
-    padding-bottom: 30px;
+    padding: 60px 75px;
   }
 
   .get-latests-news h3 {

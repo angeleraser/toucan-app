@@ -34,7 +34,7 @@
   width: 208px;
 }
 
-@media screen and (min-width: 724px) {
+@media screen and (min-width: 800px) {
   .menu {
     grid-template-columns: 1fr auto;
     row-gap: 0px;

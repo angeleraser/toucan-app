@@ -9,7 +9,7 @@
 
 .get-in-touch form {
   display: grid;
-  grid-template-columns: minmax(300px, 420px);
+  grid-template-columns: 1fr;
   place-content: center;
   row-gap: 31px;
 }
@@ -35,7 +35,13 @@
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+  .get-in-touch {
+    padding: 60px 75px;
+  }
+}
+
+@media screen and (min-width: 1190px) {
   .get-in-touch {
     grid-template-columns: 1fr minmax(380px, 442px);
     column-gap: 112px;
