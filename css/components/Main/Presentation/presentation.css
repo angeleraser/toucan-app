@@ -119,6 +119,7 @@
 
   /* Toucan Speaker wrapper  */
   .presentation .toucan-huddle-speaker {
+    margin-top: 36px;
     order: -1;
     align-items: flex-start;
     position: relative;
